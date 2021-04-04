@@ -1,0 +1,37 @@
+body {
+  margin:0;
+  padding:0;
+  background-color: black;
+  color: wheat;
+  font-family: monospace;
+}
+
+.content{
+  width: min-content;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a{
+  color: wheat;
+}
+
+a:hover{
+  color: rgb(255, 246, 230);
+}
+
+canvas {
+  margin:auto;
+}
+
+textarea {
+  width: 25rem;
+  height: 25rem;
+  white-space: nowrap;
+  overflow: auto;
+  resize: none;
+}
