@@ -35,3 +35,35 @@ textarea {
   overflow: auto;
   resize: none;
 }
+
+.card-div{
+  border: wheat;
+  border-style: solid;
+  border-radius: 0.5rem;
+  text-align: center;
+  animation-name: appear;
+  animation-duration: 2s;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  transition: background-color 1s;
+}
+
+.card-div:hover{
+  background-color:rgb(31, 23, 23);
+  transition: background-color 0.2s;
+}
+
+.card-hr{
+  border-color:wheat;
+  width: 90%;
+}
+
+.card-hidden{
+  display: none;
+}
+
+@keyframes appear {
+  from{opacity: 0%;}
+  to {opacity: 100%;}
+}
