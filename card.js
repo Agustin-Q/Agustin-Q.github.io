@@ -11,18 +11,16 @@ class Card{
       this.elem = document.createElement("div");
       this.elem.classList.add("card-div");
       this.update();
-      this.elem.addEventListener("click", this.onClick.bind(this));
-      this.event = new Event("click")
       if(!this.description){
         this.elem.getElementsByClassName("card-hr")[0].classList.add("card-hidden");
         this.elem.getElementsByClassName("card-description")[0].classList.add("card-hidden");
       }
-  }
-
-  onClick(e){
-    if(this.href){
-      window.location.href = this.href;
-    }
+      let link = document.createElement("a");
+      link.classList.add("card_link");
+      link.classList.add("card-link");
+      link.href = this.href;
+      link.innerHTML = `<span class="link-span"></span>`;
+      this.elem.appendChild(link);
   }
 
   update(){
